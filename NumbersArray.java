@@ -33,7 +33,7 @@ public class NumbersArray {
 
     public static Integer[] findDuplicates(Integer[] input) {
         Set<Integer> seen = new HashSet<>();
-        Set<Integer> duplicates = new LinkedHashSet<>();
+        Set<Integer> duplicates = new HashSet<>();
 
         for (Integer num : input) {
             if (!seen.add(num)) {
@@ -45,7 +45,7 @@ public class NumbersArray {
     }
 
     public static Integer[] findUnique(Integer[] input) {
-        Map<Integer, Integer> count = new LinkedHashMap<>();
+        Map<Integer, Integer> count = new HashMap<>();
 
         for (Integer num : input) {
             count.put(num, count.getOrDefault(num, 0) + 1);
