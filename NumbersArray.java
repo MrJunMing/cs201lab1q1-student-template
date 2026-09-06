@@ -19,10 +19,10 @@ public class NumbersArray {
         System.out.println("Unique numbers : " + Arrays.toString(findUnique(input))); 
     }
 
-    public static Integer findMax(Integer[] input) {
-        Integer max = input[0];
+    public static int findMax(Integer[] input) {
+        int max = input[0];
 
-        for (Integer num : input) {
+        for (int num : input) {
             if (num > max) {
                 max = num;
             }
