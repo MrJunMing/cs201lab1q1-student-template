@@ -59,7 +59,6 @@ public class NumbersArray {
             }
         }
         
-
         return unique.toArray(new Integer[0]);
     }
 }
